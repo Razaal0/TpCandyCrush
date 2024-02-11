@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>README</title>
+</head>
+<body>
+    <h1>TP Candy Crush</h1>
+    <h3> script.js </h3>
+    <p> Attribution des méthodes à exécuter lorsque l'utilisateur clique sur le bouton valider </p>
+    <br>
+
+    <h3> cookie.js </h3>
+    <p><b>selectionnee()</b> : permet la selection des cookies lorsque l'utilisateur clique sur un cookie </p>
+    <p><b>deselectionnee()</b> : permet la deselection des cookies lorsque l'utilisateur clique sur un cookie selectionne </p>
+    <p><b>swapCookies()</b> : permet la gestion des images normales ou non des cookies et de leur deselection </p>
+    <p><b>isSwapDistancePossible()</b> : verifie si la distance est a 1 pour savoir si le swap est possible </p>
+    <p><b>distance()</b> : verifie la distance entre 2 cookies avec sa position de ligne et colonne </p>
+    <p><b>disparaitreCookie()</b> : permet de faire disparaitre un cookie lorsqu'il fait partie d'un groupe identique </p>
+    <p><b>creationCookie()</b> : creation d'un nouveau cookie pour remplacer ceux disparu apres la realisation d'un groupe </p>
+    <br>
+
+    <h3> grille.js </h3>
+    <p><b>trySwapCookies()</b> : realisation du swap en utilisant la méthode swapCookies() </p>
+    <p><b>detecterMatch3Lignes()</b> : detecter si il y a un groupe de cookie sur chaques lignes </p>
+    <p><b>detecterMatch3Colonnes()</b> : detecter si il y a un groupe de cookie sur chaques colonnes </p>
+    <p><b>detecterGroupesDeCookies()</b> : appel des méthodes detecterMatch3Colonnes() et detecterMatch3Lignes() pour l'execution des groupes sur les lignes et colonnes </p>
+    <p><b>supprimerCookiesMarques()</b> : suppression des cookies formant un groupe en utilisant la méthode disparaitreCookie() </p>
+    <p><b>tasserLesCookies()</b> : tasse les cookies vers le bas pour remplacer les cookies supprime utilisant la methode compacteColonne()</p>
+    <p><b>compacteColonne()</b> : remplacement des nouveaux cookies par les cookies supprimer en utilisant la methode creationCookie() </p>
+    <p><b>tasserColonne()</b> : appel de la méthodes tasserLesCookies() pour faire chuter les cookies et les remplacer les anciens cookies par les nouveaux </p>
+</body>
+</html>
